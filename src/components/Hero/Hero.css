@@ -1,0 +1,46 @@
+.hero img{
+    height: 450px;
+    border-radius:50%;
+    margin-top: 160px;
+}
+.hero{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 35px;
+    color:#444444 ;
+}
+.hero h1{
+    text-align: center;
+    width: 70%;
+    font-size: 70px;
+    font-weight: 600;
+}
+.hero-action{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    font-weight: 500px;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+.hero-connect{
+    padding: 20px 40px;
+    background-color:#0d6efd ;
+    border-radius: 50px;
+    color: white;
+    transition: 0.2s;
+}
+.hero-resume{
+     padding: 20px 40px;
+    background-color:#0d6efd ;
+    border-radius: 50px;
+    color: white;
+    transition: 0.2s;
+}
+.hero-connect:hover{
+ transform: scale(1.02);
+}
+.hero-resume:hover{
+    transform: scale(1.02);
+}

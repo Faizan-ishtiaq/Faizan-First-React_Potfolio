@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: outfit;
+    height: 100vh;
+    background:white;
+    color: #1a1a1a;
+     margin: 0;
+    padding: 0;
+}

@@ -1,0 +1,57 @@
+.footer{
+    background-color: #0d6efd;
+    color:white ;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 1px;
+    height: 200px;
+    font-size: 1.1rem;
+}
+.footer-about p{
+   
+    text-align: center;
+    margin-top: 15px;
+}
+.footer-about h3{
+    text-align: center;
+    margin-top: 10px;
+}
+.footer-links ul a {
+ text-decoration: none;
+ color: white;
+
+}
+ a:hover{
+    color: #b3e5fc;
+}
+ul{
+    list-style: none;
+    margin-top: 10px;
+}
+li a{
+    text-decoration: none;
+    color: white;
+}
+.contact p{
+    margin-top: 1px;
+}
+.contact h3{
+margin-right: 20px;
+
+}
+.footer-divider{
+    width: 70%;
+    border: none;
+    border-top: 1px solid hsla(0, 0%, 100%, 0.773);
+    
+}
+.footer-copy{
+    text-align: center;
+    background-color: #0d6efd;
+    color: white;
+    padding: 10px;
+}
+h3{
+    color: #e0e0e0;
+}
