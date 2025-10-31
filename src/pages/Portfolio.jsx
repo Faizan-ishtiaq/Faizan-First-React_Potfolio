@@ -2,7 +2,7 @@ import React from "react";
 import "./Portfolio.css";
 import portfolioImg from "../assets/hero1.png"; // your real image
 import todoImg from "../assets/todolist.webp";
-import calculatorImg from "../assets/calculatorimg.webp" ;
+import calculatorImg from "../assets/calculatorImg.webp" ;
 import ecommerceImg from "../assets/ecommerce.webp"
 import blogImg from "../assets/blog.webp"
 import weatherImg from "../assets/weather.webp"

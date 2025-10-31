@@ -19,7 +19,7 @@ export default function About() {
     { name: "HTML", level: 95 },
     { name: "CSS / Bootstrap", level: 90 },
     { name: "JavaScript", level: 85 },
-    { name: "React", level: 82 },
+    { name: "React", level: 84 },
     { name: "Git / CLI", level: 72 },
   ];
 
