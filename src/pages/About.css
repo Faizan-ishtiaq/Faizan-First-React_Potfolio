@@ -1,6 +1,4 @@
-/* About page styles - adjust vars as needed */
-:root {
-  --primary: #0d6efd;
+:root{ --primary: #0d6efd;
   --muted: #666;
   --text: #1a1a1a;
   --card-bg: #fff;
@@ -126,4 +124,60 @@
 @media (max-width: 480px) {
   .about-photo { width: 110px; height: 110px; }
   .about-title { font-size:22px; }
+}
+
+/* Small-phone fixes: prevent right-lean / excessive shrink at ~360px */
+@media (max-width: 480px) {
+  /* reduce big container padding so content can use full width */
+  .container {
+    padding: 20px;  
+    margin-top: 72px;         /* was 120px — much smaller on tiny screens */
+  }
+
+  /* make sure the layout is a single column and stretches to full width */
+  .about-hero {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    align-items: start;
+    width: 100%;
+    justify-items: stretch;  /* force children to fill column width */
+  }
+
+  /* ensure elements inside use full width and don't shrink oddly */
+  .about-title,
+  .lead,
+  .about-card,
+  .skills-section,
+  .timeline-section {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /* center the small profile photo and tighten sizes */
+  .about-photo {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 12px;
+  }
+
+  /* typography tweaks so text wraps nicely */
+  .about-title { font-size: 20px; text-align: left; }
+  .lead { font-size: 15px; line-height: 1.5; }
+
+  /* skills grid -> single column and full width */
+  .skills-grid { grid-template-columns: 1fr; gap: 10px; }
+
+  /* timeline items stack nicely */
+  .timeline-item { flex-direction: column; gap: 8px; }
+  .timeline-dot { margin-left: 0; margin-top: 0; }
+
+  /* keep CTA centered and tappable */
+  .contact-ctas { justify-content: center; gap: 10px; }
+  .btn { padding: 10px 12px; font-size: 14px; }
+
+  /* small safe rule to avoid any accidental horizontal scroll */
+  html, body { overflow-x: hidden; }
 }

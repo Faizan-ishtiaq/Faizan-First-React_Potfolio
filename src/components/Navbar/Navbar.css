@@ -56,3 +56,120 @@
     transform: scale(1.05);
     
 }
+
+
+
+
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 28px;
+  height: 20px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+.hamburger span {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background-color: #0d6efd;
+  border-radius: 2px;
+}
+
+/* Mobile slide-in menu (hidden by default) */
+.nav-menu-mobile {
+  position: fixed;
+  top: 0;
+  right: -120%;
+  width: 72%;
+  max-width: 420px;
+  height: 100vh;
+  background: rgba(255, 255, 255, 0.566);
+  backdrop-filter: blur(55px);
+  box-shadow: -8px 0 30px rgba(0,0,0,0.08);
+  padding: 26px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  transition: right 0.36s ease;
+  z-index: 1100;
+}
+
+/* close button inside menu */
+.close-btn {
+  display: none;
+  align-self: flex-end;
+  font-size: 24px;
+  cursor: pointer;
+  color: #1a1a1a;
+  background: transparent;
+  border: none;
+  padding: 6px;
+}
+
+/* mobile menu list */
+.nav-menu-mobile ul {
+  list-style: none;
+  margin: 8px 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.nav-menu-mobile a {
+  text-decoration: none;
+  color: #1a1a1a;
+  font-size: 1.15rem;
+}
+.nav-menu-mobile a:hover { color: #0d6efd; }
+
+/* CTA area inside mobile menu */
+.nav-menu-cta { margin-top: auto; }
+.nav-menu-cta .nav-connect { display: inline-block; }
+
+/* Keep the desktop nav (ul.nav-menu) and .nav-connect visible by default.
+   We'll toggle visibility with media queries below. */
+
+/* -------------- Tablet / Mobile breakpoints -------------- */
+@media (max-width: 768px) {
+  /* show hamburger and hide desktop inline menu */
+  .hamburger { display: flex; 
+margin-right:30px ;}
+  .nav-menu { display: none; } /* hide original desktop menu on small screens */
+  .nav-connect { display: none; } /* hide desktop connect button */
+
+  /* when checkbox is checked, bring menu on-screen */
+  .navbar.open .nav-menu-mobile {
+    right: 0;
+  }
+  /* show close button when menu open */
+  .navbar.open .nav-menu-mobile .close-btn {
+    display: block;
+  }
+
+  /* make sure header items align with space for hamburger */
+  .navbar {
+    justify-content: space-between;
+    padding: 0 16px;
+    width: 100%;
+  }
+ 
+}
+
+/* narrower phones */
+@media (max-width: 460px) {
+  .nav-menu-mobile { width: 78%; padding: 22px 14px; }
+  .nav-menu-mobile a { font-size: 1.05rem; }
+  .close-btn { font-size: 22px; }
+}
+
+/* very small phones */
+@media (max-width: 360px) {
+  .nav-menu-mobile { width: 86%; padding: 18px 12px; }
+  .nav-menu-mobile a { font-size: 1rem; }
+  .hamburger { width: 26px; height: 18px; }
+}

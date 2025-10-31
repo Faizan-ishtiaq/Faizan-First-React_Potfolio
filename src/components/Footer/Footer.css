@@ -55,3 +55,61 @@ margin-right: 20px;
 h3{
     color: #e0e0e0;
 }
+
+
+@media (max-width: 768px) {
+  .footer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    padding: 28px 16px;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 36px;
+    box-sizing: border-box;
+  }
+
+  /* have each column occupy about 45% so two items fit per row */
+  .footer > div {
+    flex: 1 1 45%;
+    min-width: 160px;
+    text-align: left;
+  }
+
+  .footer h3 { font-size: 16px; margin-bottom: 8px; color: #e6f4ff; }
+  .footer p, .footer li, .footer a { font-size: 14px; color: #fff; line-height: 1.4; }
+  .footer-divider { width: 100%; margin: 14px 0; }
+  .footer-copy { padding: 12px; }
+}
+
+/* phone: About full width 1st row; then QuickLinks/MyLinks/Contact in 2nd row */
+@media (max-width: 412px) {
+  .footer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 22px 12px;
+    margin-top: 36px;
+  }
+
+  .footer-about {
+    order: 0;
+    flex: 1 1 100%;
+    min-width: 100%;
+    text-align: left;
+    padding-bottom: 6px;
+  }
+
+  /* the three columns below (try to be roughly equal) */
+  .footer-menu, .footer-links, .contact {
+    order: 1;
+    flex: 1 1 32%;
+    min-width: 98px;
+    text-align: left;
+  }
+
+  .footer h3 { font-size: 15px; }
+  .footer p, .footer li, .footer a { font-size: 13px; }
+  .footer-divider { width: 100%; margin-top: 12px; }
+  .footer-copy { font-size: 13px; padding: 8px 6px; }
+}
