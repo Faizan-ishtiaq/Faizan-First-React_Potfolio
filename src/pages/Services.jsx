@@ -13,7 +13,7 @@ function Services() {
 
   return (
     <>
-    <section className="services-section">
+    <section className="services-section" id="services">
       <h2 className="services-title">My Services</h2>
       <div className="services-container">
         {services.map((service, index) => (

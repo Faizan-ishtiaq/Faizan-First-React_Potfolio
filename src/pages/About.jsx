@@ -42,7 +42,7 @@ export default function About() {
   ];
 
   return (
-    <main className="about-page container">
+    <main className="about-page container" id="About">
       <section className="about-hero">
         <div className="about-left">
           <h2 className="about-title">More About Me</h2>
@@ -54,7 +54,7 @@ export default function About() {
           </p>
 
           <div className="contact-ctas">
-            <a className="btn btn-primary" href="/resume.pdf" download>
+            <a className="btn btn-primary" href="/Faizan-Ishtiaq-Resume.pdf" download>
               Download Resume
             </a>
             <a className="btn btn-outline" href="/contact">
