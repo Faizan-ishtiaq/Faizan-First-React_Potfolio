@@ -71,7 +71,7 @@ h3{
 
   /* have each column occupy about 45% so two items fit per row */
   .footer > div {
-    flex: 1 1 45%;
+    flex: 1 1 50%;
     min-width: 160px;
     text-align: left;
   }
@@ -83,33 +83,47 @@ h3{
 }
 
 /* phone: About full width 1st row; then QuickLinks/MyLinks/Contact in 2nd row */
-@media (max-width: 412px) {
+@media (max-width: 432px) {
   .footer {
-    display: flex;
-    flex-wrap: wrap;
+   align-items:center;
+    
+    flex-direction: column;
+    justify-content: center;
     gap: 12px;
     padding: 22px 12px;
     margin-top: 36px;
+    height: auto;
+    
   }
-
-  .footer-about {
-    order: 0;
-    flex: 1 1 100%;
-    min-width: 100%;
-    text-align: left;
-    padding-bottom: 6px;
-  }
-
-  /* the three columns below (try to be roughly equal) */
-  .footer-menu, .footer-links, .contact {
-    order: 1;
-    flex: 1 1 32%;
-    min-width: 98px;
-    text-align: left;
-  }
-
-  .footer h3 { font-size: 15px; }
-  .footer p, .footer li, .footer a { font-size: 13px; }
-  .footer-divider { width: 100%; margin-top: 12px; }
-  .footer-copy { font-size: 13px; padding: 8px 6px; }
+.footer > div{
+  flex: 1 1 100%;
+  width: 100%;
+  text-align: left;
+  padding: 7px 4px;
+  box-sizing: border-box;
+  justify-content: center;
 }
+.footer-about,.footer-menu,.footer-links,.contact{
+  margin: 0;
+ } 
+
+  .footer h3 { font-size: 20px; }
+  .footer p, .footer li, .footer a { font-size: 17px; }
+  .footer-divider { width: 100%; margin: 0; }
+  .footer-copy { font-size: 16px; padding: 8px 6px; }
+}
+.footer-menu ,.footer-links ,.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+}
+ul li{
+
+ margin-right: 13px;
+    }
+
+    .footer-links h3{
+      margin-right: 25px;
+    }
