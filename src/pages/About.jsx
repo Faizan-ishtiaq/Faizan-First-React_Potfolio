@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import "./About.css";
+import {Link} from "react-router-dom"
  import hero from '../assets/hero.jpg'
 
 export default function About() {
@@ -117,7 +118,7 @@ export default function About() {
 
       <section className="about-footer-cta">
         <p>Like what you see? Let’s build something together.</p>
-        <a className="btn btn-primary" href="/contact">Hire / Contact Me</a>
+        <Link className="btn btn-primary" to="/contact">Hire / Contact Me</Link>
       </section>
     </main>
   );

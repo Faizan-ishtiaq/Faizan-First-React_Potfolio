@@ -54,7 +54,9 @@ useEffect(() => {
         </ul>
 
         {/* Connect button stays same on desktop; we'll hide it on mobile via CSS */}
-        <div className="nav-connect">Connect with me</div>
+        <div className="nav-menu-cta"> 
+             <Link to="/contact" className="nav-connect">Connect with me</Link>
+          </div> 
 
         {/* Slide-in menu for small screens duplicates links and includes a close label.
             We keep it as a nav element (aria) — CSS will move it off-screen and slide in. */}
@@ -70,9 +72,7 @@ useEffect(() => {
             <li><Link to="/contact" onClick={() => document.getElementById('menu-toggle')}>Contact</Link></li>
           </ul>
 
-          <div className="nav-menu-cta">
-            <Link to="/contact" className="nav-connect">Connect with me</Link>
-          </div>
+          
         </nav>
       </header>
     </>
