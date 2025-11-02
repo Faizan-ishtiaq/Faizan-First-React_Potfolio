@@ -1,11 +1,12 @@
 import React from "react";
 import "./Portfolio.css";
 import portfolioImg from "../assets/hero1.png"; // your real image
-import todoImg from "../assets/todolist.webp";
+// import todoImg from "../assets/todolist.webp";
 import calculatorImg from "../assets/calculatorImg.webp" ;
 import ecommerceImg from "../assets/ecommerce.webp"
 import blogImg from "../assets/blog.webp"
 import weatherImg from "../assets/weather.webp"
+import coachImg from "../assets/Coach.webp"
 
 
 const Portfolio = () => {
@@ -15,14 +16,15 @@ const Portfolio = () => {
       description:
         "My first full React portfolio website showcasing my skills and design.",
       img: portfolioImg,
-      link: "http://localhost:5173/", // your actual site link
+      link: "https://faizan-first-react-potfolio-d8lh.vercel.app//", // your actual site link
       status: "Active",
     },
     {
-      title: "To-Do List App",
-      description: "A clean task manager app built with React.",
-      img: todoImg,
-      status: "Coming Soon",
+      title: "Trainify",
+      description: "A clean Fitness website  built with React.",
+      img: coachImg,
+      link:"https://tranify-react-fitness-website-juog.vercel.app/",
+      status: "Active",
     },
     {
       title: "Calculator App",
