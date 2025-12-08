@@ -2,11 +2,11 @@ import React from "react";
 import "./Portfolio.css";
 import portfolioImg from "../assets/hero1.png"; // your real image
 // import todoImg from "../assets/todolist.webp";
-import calculatorImg from "../assets/calculatorImg.webp" ;
 import ecommerceImg from "../assets/ecommerce.webp"
 import blogImg from "../assets/blog.webp"
 import weatherImg from "../assets/weather.webp"
 import coachImg from "../assets/Coach.webp"
+import todo from "../assets/Todolist.jpg"
 
 
 const Portfolio = () => {
@@ -27,11 +27,11 @@ const Portfolio = () => {
       status: "Active",
     },
     {
-      title: "Calculator App",
-      description: "A modern calculator app with custom UI.",
-      img:calculatorImg,
-      
-      status: "Coming Soon",
+      title: "Todo List",
+      description: "A React Todo-List with styling and Functionality",
+      img:todo,
+      link:"https://react-todo-list-one-delta.vercel.app",
+      status: "Active",
     },
     {
       title: "E-Commerce Website",
