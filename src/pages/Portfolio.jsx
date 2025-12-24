@@ -1,6 +1,6 @@
 import "./Portfolio.css";
 import portfolioImg from "../assets/hero1.png"; // your real image
-import ecommerceImg from "../assets/ecommerce.webp"
+import quizImg from "../assets/quiz.png"
 import blogImg from "../assets/blog.webp"
 import weatherImg from "../assets/weather.webp"
 import coachImg from "../assets/Coach.webp"
@@ -32,10 +32,11 @@ const Portfolio = () => {
       status: "Active",
     },
     {
-      title: "E-Commerce Website",
-      description: "Online store UI with product cards and filters.",
-      img:ecommerceImg,
-      status: "Coming Soon",
+      title: "Quiz App",
+      description: "A Quiz APP built With react And use localStorage.",
+      img:quizImg,
+      status: "Active",
+      link:"https://react-quiz-app-iota-topaz.vercel.app/"
     },
     {
       title: "Weather App",
