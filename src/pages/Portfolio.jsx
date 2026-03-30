@@ -1,7 +1,7 @@
 import "./Portfolio.css";
 import portfolioImg from "../assets/hero1.png"; // your real image
 import quizImg from "../assets/quiz.png"
-import blogImg from "../assets/blog.webp"
+import movie from "../assets/movie.jpeg"
 import weatherImg from "../assets/weather.webp"
 import coachImg from "../assets/Coach.webp"
 import todo from "../assets/Todolist.jpg"
@@ -46,10 +46,11 @@ const Portfolio = () => {
       link:"https://react-weather-app-flame-one.vercel.app/"
     },
     {
-      title: "Blog UI",
-      description: "Responsive layout for articles and blogs.",
-      img:blogImg,
-      status: "Coming Soon",
+      title: "Steaming App",
+      description: "The ultimate streaming destination for true movie lovers",
+      img:movie,
+      status: "Active",
+      link:"https://chinephile-stream.vercel.app/"
     },
   ];
 
