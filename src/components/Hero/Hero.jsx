@@ -10,7 +10,7 @@ function Hero(){
        <h1>I am Faizan Ahmed, frontent develpor based in Pakistan.</h1>
        <div className="hero-action">
         <Link to="/contact"  className="hero-connect">Connect with me</Link>
-        <a href='/Faizan-Ishtiaq-Resume.pdf' download="Faizan-Ishtiaq-Resume.pdf" className="hero-resume"> My resume</a>
+        <a href='/Faizan-Ishtiaq-Resume.pdf' target="_blank" className="hero-resume"> My resume</a>
        </div>
        
     </div>

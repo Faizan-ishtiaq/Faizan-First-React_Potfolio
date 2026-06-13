@@ -1,21 +1,28 @@
 import "./Portfolio.css";
-import portfolioImg from "../assets/hero1.png"; // your real image
 import quizImg from "../assets/quiz.png"
 import movie from "../assets/movie.jpeg"
 import weatherImg from "../assets/weather.webp"
 import coachImg from "../assets/Coach.webp"
 import todo from "../assets/Todolist.jpg"
+import roast from "../assets/roastbot-img.jpeg"
 
 
 const Portfolio = () => {
   const projects = [
     {
-      title: "Personal Portfolio Website",
+      title: "Roast Bot",
       description:
-        "My first full React portfolio website showcasing my skills and design.",
-      img: portfolioImg,
-      link: "https://faizan-first-react-potfolio-d8lh.vercel.app//", // your actual site link
+        "A full-stack AI web app that roasts users in Roman Urdu.",
+      img: roast,
+      link: "https://roast-bot-frontend.vercel.app/", // your actual site link
       status: "Active",
+    },
+    {
+      title: "Steaming App",
+      description: "The ultimate streaming destination for true movie lovers",
+      img:movie,
+      status: "Active",
+      link:"https://chinephile-stream.vercel.app/"
     },
     {
       title: "Trainify",
@@ -45,13 +52,7 @@ const Portfolio = () => {
       status: "Active",
       link:"https://react-weather-app-flame-one.vercel.app/"
     },
-    {
-      title: "Steaming App",
-      description: "The ultimate streaming destination for true movie lovers",
-      img:movie,
-      status: "Active",
-      link:"https://chinephile-stream.vercel.app/"
-    },
+    
   ];
 
   return (
